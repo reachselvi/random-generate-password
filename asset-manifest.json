@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/random-generate-password/static/css/main.f281db4d.css",
+    "main.js": "/random-generate-password/static/js/main.b3ce4df5.js",
+    "index.html": "/random-generate-password/index.html",
+    "main.f281db4d.css.map": "/random-generate-password/static/css/main.f281db4d.css.map",
+    "main.b3ce4df5.js.map": "/random-generate-password/static/js/main.b3ce4df5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f281db4d.css",
+    "static/js/main.b3ce4df5.js"
+  ]
+}
