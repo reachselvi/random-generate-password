@@ -1,38 +1,154 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arial, Helvetica, sans-serif";
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(248, 249, 250);
+  font-size: 18px;
+  font-family: "Arial, Helvetica, sans-serif";
+  color: #080807;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+section {
   min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 100px 0;
+}
+.container {
+  padding: 30px;
+  background-color: #606C5D;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #00000011;
+  width: 90%;
+  max-width: 400px;
+}
+form {
+  width: 100%;
+  font-size: 20px;
+}
+input[type=checkbox] {
+  width: 25px;
+  height: 25px;
+}
+.result {
+  background-color: rgb(244, 195, 112);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.result #result {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+}
+.result .clipboard {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(138, 246, 172);
+  color: rgb(242, 79, 79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.field input[type='number'] {
+  width: 50px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  padding-right: 0px;
+  font-size: 16px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 4px;
+}
+.count {
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding: 10px;
+  transition: 0.3s ease background-color;
+  background-color: rgb(248, 126, 177);
+}
+.size {
+  width:25px;
+  height:25px;
+}
+.field {
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.3s ease background-color;
+  
+}
+.field:first-of-type {
+  padding-right: 0;
+}
+.field:hover {
+  background-color: rgb(87, 177, 238);
+}
+.field label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.field input {
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: rgb(198, 130, 243);
   color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+.align {
+  margin:15px;
 }

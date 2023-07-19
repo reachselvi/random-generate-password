@@ -5,8 +5,7 @@ button increaseCounter and decreaseCounter used to increase and decrease the num
 
 ## npm
 
-npm install react-hot-toast
-npm install react-icons
+npm install react-hot-toast, npm install react-icons
 
 ### Must
 
