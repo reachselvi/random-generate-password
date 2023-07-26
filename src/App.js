@@ -23,7 +23,6 @@ function App() {
   const [isLowercase, setIsLowercase] = useState(false);
   const [isNumber, setIsNumber] = useState(false);
   const [isSymbol, setIsSymbol] = useState(false);
-  
 
   const increaseCounter = (e) => {
     e.preventDefault();
@@ -42,13 +41,16 @@ function App() {
   };
   const generatePassword = (e) => {
     e.preventDefault();
+
     let newPassword = "";
 
     for (let i = 0; i < counter; i++) {
       newPassword += getRandom();
+      console.log("newPassword:", newPassword);
     }
-
-    setPassword(newPassword);
+    // store all the password in localstorage
+    setPassword([newPassword, ...password]);
+    console.log("password:", password);
   };
 
   const getRandom = () => {
@@ -110,7 +112,6 @@ function App() {
       isSymbol={isSymbol}
       setIsSymbol={setIsSymbol}
       generatePassword={generatePassword}
-      
     />
   );
 }

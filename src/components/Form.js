@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaClipboard } from "react-icons/fa";
-import user from "../user";
+
 const Form = ({
   password,
   handleClipboard,
@@ -18,8 +18,6 @@ const Form = ({
   setIsSymbol,
   generatePassword,
 }) => {
-  const [data, setData] = useState(user);
-
   return (
     <section>
       <div className="container">
@@ -94,27 +92,15 @@ const Form = ({
       </div>
 
       <div className="password">
-        <table>
-          <thead>
-            <tr>
-              <th>User Password</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item) => {
-              return (
-                <tr>
-                  <td>{item.password}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-
         <br />
         <div className="align">
-          <label>Generated Password:</label>
-          <p>{password}</p>
+          {/* display 5 password on the screen */}
+          <label><u>Generated Password:</u></label>
+          {/* <p>{password}</p> */}
+          <p>1. {password[0]}</p>
+          <p>2. {password[1]}</p>
+          <p>3. {password[2]}</p>
+          <p>4. {password[3]}</p>
         </div>
       </div>
     </section>
